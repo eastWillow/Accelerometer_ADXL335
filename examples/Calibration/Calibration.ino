@@ -1,3 +1,29 @@
+/*****************************************************************************/
+//  Function:  Calibrate the accelemeter of the x/y/z axis.
+//  Hardware:  Grove - 3-Axis Analog Accelerometer
+//  Arduino IDE: Arduino-1.6.5
+//  Author:  Frankie.Chu
+//  Modifier: eastWillow
+//  Date:    Aug/5/2015
+//  Version: v2.0
+//  by www.seeedstudio.com
+//  by http://makerkuo.weebly.com
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU Lesser General Public
+//  License as published by the Free Software Foundation; either
+//  version 2.1 of the License, or (at your option) any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  Lesser General Public License for more details.
+//
+//  You should have received a copy of the GNU Lesser General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+//
+/*******************************************************************************/
 const int xInput = A0;
 const int yInput = A1;
 const int zInput = A2;
@@ -107,6 +133,19 @@ void loop()
     yRaw = ReadAxis(yInput);
     zRaw = ReadAxis(zInput);
     displayInfo();
+    Serial.print("xRawMax =");
+    Serial.print(xRawMax);
+    Serial.print(" xRawMin =");
+    Serial.println(xRawMin);
+    Serial.print("yRawMax =");
+    Serial.print(yRawMax);
+    Serial.print(" yRawMin =");
+    Serial.println(yRawMin);
+    Serial.print("zRawMax =");
+    Serial.print(zRawMax);
+    Serial.print(" zRawMin =");
+    Serial.println(zRawMin);
+
     while (Serial.available() > 0) {
       Serial.read();
       if (Serial.available() == 0)

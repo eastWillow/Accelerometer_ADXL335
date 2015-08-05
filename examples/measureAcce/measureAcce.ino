@@ -1,11 +1,13 @@
 /*****************************************************************************/
 //	Function:  Get the accelemeter of the x/y/z axis. 
 //  Hardware:  Grove - 3-Axis Analog Accelerometer
-//	Arduino IDE: Arduino-1.0
-//	Author:	 Frankie.Chu		
-//	Date: 	 Jan 11,2013
-//	Version: v1.0
+//	Arduino IDE: Arduino-1.6.5
+//	Author:	 Frankie.Chu
+//  Modifier: eastWillow
+//	Date: 	 Aug/5/2015
+//	Version: v2.0
 //	by www.seeedstudio.com
+//  by http://makerkuo.weebly.com
 //
 //  This library is free software; you can redistribute it and/or
 //  modify it under the terms of the GNU Lesser General Public
