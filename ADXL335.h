@@ -37,8 +37,14 @@
 #define Y_AXIS_PIN A1
 #define Z_AXIS_PIN A2
 
+#define xRawMin 613
+#define xRawMax 407
 
+#define yRawMin 608
+#define yRawMax 418
 
+#define zRawMin 624
+#define zRawMax 436
 
 class ADXL335
 {
