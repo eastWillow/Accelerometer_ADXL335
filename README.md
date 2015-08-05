@@ -1,7 +1,9 @@
 ##Accelerometer_ADXL335
-修改版，這個版本融合了adafruit 和 seed 的校正程式碼，功能上也是採用adafruit 的mpa 方式去計算加速度值
+修改版，這個版本融合了adafruit 和 seed 的校正程式碼，功能上也是採用adafruit 的mpa 方式去計算加速度值.
+
 This is the Edited Version.
 This version remix the adafruit and seed source code.
+
 ![image](http://www.seeedstudio.com/wiki/images/4/49/Grove_-_3-axis_Analog_Accelerometer_photo.JPG)
 
 The ADXL335 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs. The product measures acceleration with a minimum full-scale range of ±3 g.
